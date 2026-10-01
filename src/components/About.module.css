@@ -1,0 +1,21 @@
+.about {
+  padding-block: clamp(3rem, 8vw, 5.5rem);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.aboutInner {
+  max-width: 40rem;
+}
+
+.aboutText {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.15rem, 2.4vw, 1.4rem);
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+.aboutText strong {
+  color: var(--accent);
+  font-weight: 600;
+}

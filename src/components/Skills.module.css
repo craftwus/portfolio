@@ -1,0 +1,57 @@
+.skills {
+  padding-block: clamp(3rem, 8vw, 5.5rem);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.skills h2 {
+  margin-top: 0.75rem;
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
+  max-width: 32rem;
+}
+
+.skillsNote {
+  margin-top: 1.1rem;
+  max-width: 34rem;
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: clamp(2rem, 5vw, 3rem);
+}
+
+.groupLabel {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+}
+
+.group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.group li {
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+@media (max-width: 42rem) {
+  .groups {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}

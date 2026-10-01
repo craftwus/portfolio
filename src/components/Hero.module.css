@@ -1,0 +1,134 @@
+.hero {
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
+  padding-bottom: clamp(3rem, 8vw, 5rem);
+  border-bottom: 1px solid var(--line-soft);
+  background:
+    radial-gradient(ellipse 60% 50% at 85% -10%, var(--accent-soft), transparent);
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 8vw, 5rem);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.mark {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.markDot {
+  color: var(--accent);
+}
+
+.topbarRight {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.02em;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.socials a {
+  color: var(--ink-muted);
+  display: flex;
+  transition: color 0.15s ease;
+}
+
+.socials a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 26rem) {
+  .status {
+    display: none;
+  }
+}
+
+.heroBody {
+  max-width: 42rem;
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+}
+
+.heroBody h1 {
+  font-size: clamp(2.2rem, 6vw, 3.75rem);
+  color: var(--ink);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.lede {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--ink-muted);
+  max-width: 34rem;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  margin-top: 2.25rem;
+}
+
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #12100e;
+  font-weight: 500;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+  background: #dc8c58;
+}
+
+.btnGhost {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--ink-muted);
+}
+
+.btnGhost:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+}
