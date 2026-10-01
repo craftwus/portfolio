@@ -26,7 +26,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 const title = 'Nicolò Rancan — Full-stack developer';
 const description =
-  'Full-stack developer based in Chiampo, Italy. I design, write, and ship complete web applications.';
+  'Full-stack developer based in Chiampo, Italy. I design, write, and ship complete web applications. Open to work on websites and apps.';
 
 export const metadata: Metadata = {
   title,
